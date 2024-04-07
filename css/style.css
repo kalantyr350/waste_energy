@@ -70,7 +70,12 @@ a{
   align-items: center;
   justify-content: space-between;
 }
+.hero-link{
+  margin-bottom: 30px;
+  padding-left: 16px;
+}
 .link-ua{
+  /* background-color: midnightblue; */
   padding: 15px;
 }
 .link-ua:hover{
