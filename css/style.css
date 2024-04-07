@@ -7,6 +7,7 @@
   background: none;
 }
 body {
+  /* transform: scale(0.9); */
   font-weight: normal;
   font-size: 11px;
   font-family: Arial;
@@ -29,6 +30,21 @@ a{
     padding-left: 100px;
     padding-right: 100px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
   .text {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -48,6 +64,24 @@ a{
   font-size: 46px;
 }
 
+.box-hero{
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link-ua{
+  padding: 15px;
+}
+.link-ua:hover{
+  color: black;
+  background-color: white;
+  
+  border-radius: 100%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .wide-text{
   font-weight: 900;
 }
@@ -57,10 +91,6 @@ a{
   }
   .bgImages{
     background-image: url(../images/hero-bg.jpg);
-  }
-
-  .hero-img{
-    margin-bottom: 80px;
   }
 
 .hero-text{
@@ -259,17 +289,29 @@ padding: 0;
   display:inline-flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 15px;
+  gap: 10px;
 }
 
 .work-item{
   flex-basis: calc((100% - 45px) / 3);
   align-items: center;
-  padding: 25px;
+  padding: 20px;
   box-sizing: border-box;
   box-shadow: 0px 3px 6px rgba(0,0,0,.12), 0px 3px 3px rgba(0,0,0,.14), 0px 4px 3px rgba(0,0,0,.2);
   border: 3px solid #25753f;
   border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .work-item {
+    flex-basis: calc((100% - 30px) / 2); 
+  }
+}
+
+@media (max-width: 480px) {
+  .work-item {
+    flex-basis: 100%; 
+  }
 }
 .work-img{
   margin-right: 20px;
@@ -277,6 +319,9 @@ padding: 0;
 
 .qrcode-link:hover{
   color: #25753f;
+}
+.qrcode-elm{
+  margin-top: 30;
 }
 
 .qrcode-flex{
@@ -300,4 +345,24 @@ padding: 0;
   display: flex;
   justify-content: center;
     align-items: center;
+}
+
+.footer-btn{
+  display: inline-flex;
+  min-width: 150px;
+  min-height: 40px;
+  margin: 0 auto;
+  padding: 10px 32px;
+  align-items: center;
+  border: 0;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 8px;
+  transition: background-color 250ms var(--timing-f);
+  color:white;
+  background-color:#25753f;
 }
