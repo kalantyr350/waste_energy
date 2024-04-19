@@ -21,6 +21,12 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+@media screen and (max-width:1199px){
+  .container-none{
+    display: none;
+  }
+}
 @media screen and (min-width: 480px) {
   .section{
     padding-top: 30px;
@@ -290,7 +296,7 @@ a{
 
 .our_work-item{
   
-  /* width: calc((100% - 10px)/2); */
+  width: calc((100% - 10px)/2);
   height: 300px;
   background-size: cover;
 }
