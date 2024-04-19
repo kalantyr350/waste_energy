@@ -309,17 +309,36 @@ a{
 .system-box{
   margin-bottom: 30px;
 }
-.system-list{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+@media screen and (min-width: 480px) {
+  .system-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .system-list{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 786px) {
+  .system-item{
+    flex-basis: calc((100% - 10px)/2) ;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .system-item{
+    
+    flex-basis: calc((100% - 30px)/4)
+  }
 }
 
 .system-item{
   padding: 20px;
-  flex-basis: 100% ;
-  border-radius: 15px;
-  /* width: calc((100% - 10px)/2);  */
+  
+  border-radius: 15px; 
 
   box-shadow: 0px 1px 3px rgba(0,0,0,.12), 0px 1px 1px rgba(0,0,0,.14), 0px 2px 1px rgba(0,0,0,.2);
   background-color: #25753f;
