@@ -27,7 +27,7 @@ a{
     display: none;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .section{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -46,11 +46,11 @@ a{
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
     margin-right: auto;
     margin-left: auto;
-    max-width: 480px;
+    max-width: 320px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -94,7 +94,7 @@ a{
     color: white;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     .title{
       margin-bottom: 50px;
     padding-left: 20px;
@@ -122,7 +122,7 @@ a{
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (min-width:480px){
+@media screen and (min-width:320px){
   .logo{
   width: 190px;
   }
@@ -137,7 +137,7 @@ a{
     width:240px;
   }
 }
-@media screen and (min-width:480px){
+@media screen and (min-width:320px){
   .hero-img{
     width: 200px;
   }
@@ -197,7 +197,7 @@ a{
   
   color: #25753f;
 }
-@media screen and (min-width: 480px){
+@media screen and (min-width: 320px){
   .follow-title{
     margin: 0;
     padding-right: 25px;
@@ -224,7 +224,7 @@ a{
     line-height: 1.62;
   }
 }
-@media screen and (min-width: 480px){
+@media screen and (min-width: 320px){
   .follow-text{
     margin-bottom: 70px;
     padding-left: 20px;
@@ -285,7 +285,7 @@ a{
   flex-wrap: wrap;
   gap: 10px;
 }
-@media screen and(min-width: 480px) {
+@media screen and(min-width: 320px) {
   .our_work-item{
     width: 100%;
   }
@@ -318,7 +318,7 @@ a{
 .system-box{
   margin-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .system-list{
     display: flex;
     flex-wrap: wrap;
@@ -462,7 +462,7 @@ padding: 0;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   .work-item {
     flex-basis: 100%; 
   }
@@ -501,7 +501,7 @@ padding: 0;
     align-items: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer-btn{
     display: inline-flex;
     min-width: 150px;
